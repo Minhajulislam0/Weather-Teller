@@ -74,7 +74,7 @@ body {
 
 .further-forecast {
   background: rgba(24, 24, 27, 0.7);
-  padding: 25px;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   display: flex;
@@ -90,7 +90,7 @@ body {
   justify-content: center;
 }
 
-.further-forecast.today .day {
+.further-forecast .today .day {
   padding: 5px 15px;
   background: #3c3c44;
   border-radius: 50px;
@@ -170,5 +170,13 @@ body {
 
   .current-info .others .weather-item {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .further-forecast {
+    justify-content: start;
+    align-items: none;
+    overflow-x: scroll;
   }
 }
